@@ -303,22 +303,8 @@ class VOC07test_meta(data.Dataset):
 
 if __name__ == '__main__':
     db = VOC07test_meta(root=VOC_ROOT,transform=None)
-    # for id in db.ids:
-    #     if id[0] == '/workspace/one_shot_retrieval/VOC2012':
-    #         print('1')
-    #     else:
-    #         continue
-    # with open(os.path.join(db.voc07test_meta_info, 'cls_dict'+str(cfg.IDX)+'.pkl'), 'rb') as f:
-    #     cls_dict = pickle.load(f)
-    # for k, v in cls_dict.items():
-    #     for id in v:
-    #         if id[0] == '/workspace/one_shot_retrieval/VOC2012':
-    #             print(1)
-    #         else:
-    #             continue
-    #
     print(db.seen_classes)
-    # print(db.unseen_classes)
+    print(db.unseen_classes)
 
 
 
